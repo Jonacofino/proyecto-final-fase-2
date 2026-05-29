@@ -1,0 +1,331 @@
+origen_id,origen_tipo,destino_id,destino_tipo,relacion,r_timestamp,r_duracion_seg,r_completo,r_plataforma,r_relevancia,r_score,u_nombre,u_edad,u_franja,u_registro,v_titulo,v_duracion_seg,v_autor,v_pub,v_vistas,t_nombre,t_cat
+V01,Video,T01,Tag,TAGGED_WITH,,,,,,0.95,,,,,"El origen de la IA",120,@tech_guru,2024-03-01,250000,tecnología,educación
+V02,Video,T02,Tag,TAGGED_WITH,,,,,,0.85,,,,,"Memes de gatos 2025",45,@cat_laughs,2024-04-10,500000,comedia,entretenimiento
+V03,Video,T03,Tag,TAGGED_WITH,,,,,,1.0,,,,,"Rutina de abdomen",60,@fit_life,2024-02-15,120000,fitness,salud
+V04,Video,T04,Tag,TAGGED_WITH,,,,,,0.9,,,,,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,cocina,estilo de vida
+V05,Video,T05,Tag,TAGGED_WITH,,,,,,0.8,,,,,"Mejores goles de la Champions",90,@futbol_top,2024-05-01,800000,deportes,entretenimiento
+V06,Video,T01,Tag,TAGGED_WITH,,,,,,0.9,,,,,"Review iPhone 16",300,@tech_guru,2024-05-15,450000,tecnología,educación
+V07,Video,T02,Tag,TAGGED_WITH,,,,,,0.85,,,,,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,comedia,entretenimiento
+V08,Video,T06,Tag,TAGGED_WITH,,,,,,0.95,,,,,"Historia de Roma en 1 min",60,@historia_express,2024-02-28,150000,historia,educación
+V09,Video,T07,Tag,TAGGED_WITH,,,,,,1.0,,,,,"Cómo invertir en bolsa",400,@finanzas_ya,2024-01-10,200000,finanzas,educación
+V10,Video,T08,Tag,TAGGED_WITH,,,,,,0.9,,,,,"Top 5 películas de terror",150,@cine_fan,2024-04-05,180000,cine,entretenimiento
+V01,Video,T09,Tag,TAGGED_WITH,,,,,,0.7,,,,,"El origen de la IA",120,@tech_guru,2024-03-01,250000,futuro,educación
+V04,Video,T10,Tag,TAGGED_WITH,,,,,,0.6,,,,,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,tutorial,estilo de vida
+U01,Usuario,T01,Tag,INTERESTED_IN,,,,,,0.9,Ana,21,mañana,2024-01-15,,,,,,tecnología,educación
+U01,Usuario,T02,Tag,INTERESTED_IN,,,,,,0.8,Ana,21,mañana,2024-01-15,,,,,,comedia,entretenimiento
+U02,Usuario,T03,Tag,INTERESTED_IN,,,,,,0.95,Carlos,22,noche,2024-02-10,,,,,,fitness,salud
+U02,Usuario,T05,Tag,INTERESTED_IN,,,,,,0.7,Carlos,22,noche,2024-02-10,,,,,,deportes,entretenimiento
+U03,Usuario,T04,Tag,INTERESTED_IN,,,,,,0.85,Luis,20,tarde,2024-03-05,,,,,,cocina,estilo de vida
+U03,Usuario,T10,Tag,INTERESTED_IN,,,,,,0.9,Luis,20,tarde,2024-03-05,,,,,,tutorial,estilo de vida
+U04,Usuario,T06,Tag,INTERESTED_IN,,,,,,1.0,Maria,23,mañana,2024-01-20,,,,,,historia,educación
+U04,Usuario,T07,Tag,INTERESTED_IN,,,,,,0.8,Maria,23,mañana,2024-01-20,,,,,,finanzas,educación
+U05,Usuario,T08,Tag,INTERESTED_IN,,,,,,0.9,Jorge,19,noche,2024-04-12,,,,,,cine,entretenimiento
+U05,Usuario,T02,Tag,INTERESTED_IN,,,,,,0.75,Jorge,19,noche,2024-04-12,,,,,,comedia,entretenimiento
+U01,Usuario,V01,Video,WATCHED,2024-05-10 08:30:00,120,true,,,,Ana,21,mañana,2024-01-15,"El origen de la IA",120,@tech_guru,2024-03-01,250000,,
+U01,Usuario,V01,Video,LIKED,2024-05-10 08:32:00,,,,,,,Ana,21,mañana,2024-01-15,"El origen de la IA",120,@tech_guru,2024-03-01,250000,,
+U01,Usuario,V06,Video,WATCHED,2024-05-10 08:40:00,300,true,,,,Ana,21,mañana,2024-01-15,"Review iPhone 16",300,@tech_guru,2024-05-15,450000,,
+U01,Usuario,V06,Video,SHARED,2024-05-10 08:45:00,,,,WhatsApp,,,Ana,21,mañana,2024-01-15,"Review iPhone 16",300,@tech_guru,2024-05-15,450000,,
+U01,Usuario,V03,Video,WATCHED,2024-05-10 08:50:00,10,false,,,,Ana,21,mañana,2024-01-15,"Rutina de abdomen",60,@fit_life,2024-02-15,120000,,
+U01,Usuario,V03,Video,NOT_INTERESTED,2024-05-10 08:51:00,,,,,,,Ana,21,mañana,2024-01-15,"Rutina de abdomen",60,@fit_life,2024-02-15,120000,,
+U02,Usuario,V03,Video,WATCHED,2024-05-11 20:00:00,60,true,,,,Carlos,22,noche,2024-02-10,"Rutina de abdomen",60,@fit_life,2024-02-15,120000,,
+U02,Usuario,V03,Video,LIKED,2024-05-11 20:01:00,,,,,,,Carlos,22,noche,2024-02-10,"Rutina de abdomen",60,@fit_life,2024-02-15,120000,,
+U02,Usuario,V05,Video,WATCHED,2024-05-11 20:10:00,90,true,,,,Carlos,22,noche,2024-02-10,"Mejores goles de la Champions",90,@futbol_top,2024-05-01,800000,,
+U02,Usuario,V05,Video,SHARED,2024-05-11 20:12:00,,,,Instagram,,,Carlos,22,noche,2024-02-10,"Mejores goles de la Champions",90,@futbol_top,2024-05-01,800000,,
+U02,Usuario,V02,Video,WATCHED,2024-05-11 20:15:00,45,true,,,,Carlos,22,noche,2024-02-10,"Memes de gatos 2025",45,@cat_laughs,2024-04-10,500000,,
+U03,Usuario,V04,Video,WATCHED,2024-05-12 15:30:00,180,true,,,,Luis,20,tarde,2024-03-05,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,,
+U03,Usuario,V04,Video,LIKED,2024-05-12 15:33:00,,,,,,,Luis,20,tarde,2024-03-05,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,,
+U03,Usuario,V07,Video,WATCHED,2024-05-12 15:40:00,5,false,,,,Luis,20,tarde,2024-03-05,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U03,Usuario,V07,Video,NOT_INTERESTED,2024-05-12 15:41:00,,,,,,,Luis,20,tarde,2024-03-05,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U04,Usuario,V08,Video,WATCHED,2024-05-13 09:00:00,60,true,,,,Maria,23,mañana,2024-01-20,"Historia de Roma en 1 min",60,@historia_express,2024-02-28,150000,,
+U04,Usuario,V08,Video,LIKED,2024-05-13 09:01:00,,,,,,,Maria,23,mañana,2024-01-20,"Historia de Roma en 1 min",60,@historia_express,2024-02-28,150000,,
+U04,Usuario,V09,Video,WATCHED,2024-05-13 09:10:00,400,true,,,,Maria,23,mañana,2024-01-20,"Cómo invertir en bolsa",400,@finanzas_ya,2024-01-10,200000,,
+U04,Usuario,V09,Video,SHARED,2024-05-13 09:17:00,,,,Twitter,,,Maria,23,mañana,2024-01-20,"Cómo invertir en bolsa",400,@finanzas_ya,2024-01-10,200000,,
+U05,Usuario,V10,Video,WATCHED,2024-05-14 22:00:00,150,true,,,,Jorge,19,noche,2024-04-12,"Top 5 películas de terror",150,@cine_fan,2024-04-05,180000,,
+U05,Usuario,V10,Video,LIKED,2024-05-14 22:03:00,,,,,,,Jorge,19,noche,2024-04-12,"Top 5 películas de terror",150,@cine_fan,2024-04-05,180000,,
+U05,Usuario,V02,Video,WATCHED,2024-05-14 22:10:00,45,true,,,,Jorge,19,noche,2024-04-12,"Memes de gatos 2025",45,@cat_laughs,2024-04-10,500000,,
+U05,Usuario,V02,Video,LIKED,2024-05-14 22:11:00,,,,,,,Jorge,19,noche,2024-04-12,"Memes de gatos 2025",45,@cat_laughs,2024-04-10,500000,,
+U01,Usuario,V02,Video,WATCHED,2024-05-15 08:00:00,45,true,,,,Ana,21,mañana,2024-01-15,"Memes de gatos 2025",45,@cat_laughs,2024-04-10,500000,,
+U02,Usuario,V07,Video,WATCHED,2024-05-15 21:00:00,30,true,,,,Carlos,22,noche,2024-02-10,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U03,Usuario,V09,Video,WATCHED,2024-05-16 16:00:00,200,false,,,,Luis,20,tarde,2024-03-05,"Cómo invertir en bolsa",400,@finanzas_ya,2024-01-10,200000,,
+U04,Usuario,V01,Video,WATCHED,2024-05-16 09:30:00,120,true,,,,Maria,23,mañana,2024-01-20,"El origen de la IA",120,@tech_guru,2024-03-01,250000,,
+U05,Usuario,V07,Video,WATCHED,2024-05-17 23:00:00,30,true,,,,Jorge,19,noche,2024-04-12,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U05,Usuario,V07,Video,SHARED,2024-05-17 23:01:00,,,,WhatsApp,,,Jorge,19,noche,2024-04-12,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U01,Usuario,V07,Video,WATCHED,2024-05-18 08:15:00,10,false,,,,Ana,21,mañana,2024-01-15,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U02,Usuario,V01,Video,WATCHED,2024-05-18 20:30:00,120,true,,,,Carlos,22,noche,2024-02-10,"El origen de la IA",120,@tech_guru,2024-03-01,250000,,
+U03,Usuario,V01,Video,WATCHED,2024-05-19 14:00:00,60,false,,,,Luis,20,tarde,2024-03-05,"El origen de la IA",120,@tech_guru,2024-03-01,250000,,
+U04,Usuario,V06,Video,WATCHED,2024-05-19 10:00:00,300,true,,,,Maria,23,mañana,2024-01-20,"Review iPhone 16",300,@tech_guru,2024-05-15,450000,,
+U05,Usuario,V08,Video,WATCHED,2024-05-20 21:00:00,60,true,,,,Jorge,19,noche,2024-04-12,"Historia de Roma en 1 min",60,@historia_express,2024-02-28,150000,,
+U05,Usuario,V08,Video,NOT_INTERESTED,2024-05-20 21:02:00,,,,,,,Jorge,19,noche,2024-04-12,"Historia de Roma en 1 min",60,@historia_express,2024-02-28,150000,,
+V11,Video,T01,Tag,TAGGED_WITH,,,,,,0.95,,,,,"Pthreads en C++",300,@code_master,2024-04-10,35000,tecnología,educación
+V12,Video,T06,Tag,TAGGED_WITH,,,,,,1.0,,,,,"Decreto 900 explicado",600,@historia_gt,2024-03-05,42000,historia,educación
+V13,Video,T01,Tag,TAGGED_WITH,,,,,,0.8,,,,,"Review teclado mecánico",240,@tech_guru,2024-05-02,150000,tecnología,educación
+V14,Video,T05,Tag,TAGGED_WITH,,,,,,0.9,,,,,"Mejores jugadas NBA",120,@basket_fan,2024-04-20,210000,deportes,entretenimiento
+V15,Video,T08,Tag,TAGGED_WITH,,,,,,1.0,,,,,"Tráiler nueva película",90,@cine_fan,2024-05-18,500000,cine,entretenimiento
+U06,Usuario,T01,Tag,INTERESTED_IN,,,,,,0.9,Roberto,21,tarde,2024-02-15,,,,,,tecnología,educación
+U06,Usuario,T08,Tag,INTERESTED_IN,,,,,,0.85,Roberto,21,tarde,2024-02-15,,,,,,cine,entretenimiento
+U07,Usuario,T06,Tag,INTERESTED_IN,,,,,,0.95,Elena,22,mañana,2024-03-01,,,,,,historia,educación
+U07,Usuario,T02,Tag,INTERESTED_IN,,,,,,0.7,Elena,22,mañana,2024-03-01,,,,,,comedia,entretenimiento
+U08,Usuario,T05,Tag,INTERESTED_IN,,,,,,0.9,Mario,20,noche,2024-01-28,,,,,,deportes,entretenimiento
+U08,Usuario,T01,Tag,INTERESTED_IN,,,,,,0.6,Mario,20,noche,2024-01-28,,,,,,tecnología,educación
+U09,Usuario,T04,Tag,INTERESTED_IN,,,,,,1.0,Carmen,24,tarde,2024-04-05,,,,,,cocina,estilo de vida
+U09,Usuario,T08,Tag,INTERESTED_IN,,,,,,0.8,Carmen,24,tarde,2024-04-05,,,,,,cine,entretenimiento
+U10,Usuario,T06,Tag,INTERESTED_IN,,,,,,0.9,Diego,19,mañana,2024-02-22,,,,,,historia,educación
+U10,Usuario,T01,Tag,INTERESTED_IN,,,,,,0.85,Diego,19,mañana,2024-02-22,,,,,,tecnología,educación
+U06,Usuario,V11,Video,WATCHED,2024-05-20 15:00:00,300,true,,,,Roberto,21,tarde,2024-02-15,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U06,Usuario,V11,Video,LIKED,2024-05-20 15:05:00,,,,,,,Roberto,21,tarde,2024-02-15,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U06,Usuario,V13,Video,WATCHED,2024-05-20 15:10:00,240,true,,,,Roberto,21,tarde,2024-02-15,"Review teclado mecánico",240,@tech_guru,2024-05-02,150000,,
+U06,Usuario,V15,Video,WATCHED,2024-05-20 15:15:00,90,true,,,,Roberto,21,tarde,2024-02-15,"Tráiler nueva película",90,@cine_fan,2024-05-18,500000,,
+U06,Usuario,V15,Video,SHARED,2024-05-20 15:17:00,,,,Twitter,,,Roberto,21,tarde,2024-02-15,"Tráiler nueva película",90,@cine_fan,2024-05-18,500000,,
+U07,Usuario,V12,Video,WATCHED,2024-05-21 09:00:00,600,true,,,,Elena,22,mañana,2024-03-01,"Decreto 900 explicado",600,@historia_gt,2024-03-05,42000,,
+U07,Usuario,V12,Video,LIKED,2024-05-21 09:10:00,,,,,,,Elena,22,mañana,2024-03-01,"Decreto 900 explicado",600,@historia_gt,2024-03-05,42000,,
+U07,Usuario,V08,Video,WATCHED,2024-05-21 09:15:00,60,true,,,,Elena,22,mañana,2024-03-01,"Historia de Roma en 1 min",60,@historia_express,2024-02-28,150000,,
+U07,Usuario,V14,Video,WATCHED,2024-05-21 09:20:00,10,false,,,,Elena,22,mañana,2024-03-01,"Mejores jugadas NBA",120,@basket_fan,2024-04-20,210000,,
+U07,Usuario,V14,Video,NOT_INTERESTED,2024-05-21 09:21:00,,,,,,,Elena,22,mañana,2024-03-01,"Mejores jugadas NBA",120,@basket_fan,2024-04-20,210000,,
+U08,Usuario,V14,Video,WATCHED,2024-05-22 21:00:00,120,true,,,,Mario,20,noche,2024-01-28,"Mejores jugadas NBA",120,@basket_fan,2024-04-20,210000,,
+U08,Usuario,V14,Video,LIKED,2024-05-22 21:02:00,,,,,,,Mario,20,noche,2024-01-28,"Mejores jugadas NBA",120,@basket_fan,2024-04-20,210000,,
+U08,Usuario,V05,Video,WATCHED,2024-05-22 21:10:00,90,true,,,,Mario,20,noche,2024-01-28,"Mejores goles de la Champions",90,@futbol_top,2024-05-01,800000,,
+U08,Usuario,V05,Video,SHARED,2024-05-22 21:12:00,,,,WhatsApp,,,Mario,20,noche,2024-01-28,"Mejores goles de la Champions",90,@futbol_top,2024-05-01,800000,,
+U08,Usuario,V15,Video,WATCHED,2024-05-22 21:15:00,90,true,,,,Mario,20,noche,2024-01-28,"Tráiler nueva película",90,@cine_fan,2024-05-18,500000,,
+U09,Usuario,V04,Video,WATCHED,2024-05-23 16:30:00,180,true,,,,Carmen,24,tarde,2024-04-05,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,,
+U09,Usuario,V04,Video,LIKED,2024-05-23 16:33:00,,,,,,,Carmen,24,tarde,2024-04-05,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,,
+U09,Usuario,V15,Video,WATCHED,2024-05-23 16:40:00,90,true,,,,Carmen,24,tarde,2024-04-05,"Tráiler nueva película",90,@cine_fan,2024-05-18,500000,,
+U09,Usuario,V11,Video,WATCHED,2024-05-23 16:45:00,15,false,,,,Carmen,24,tarde,2024-04-05,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U09,Usuario,V11,Video,NOT_INTERESTED,2024-05-23 16:46:00,,,,,,,Carmen,24,tarde,2024-04-05,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U10,Usuario,V12,Video,WATCHED,2024-05-24 10:00:00,600,true,,,,Diego,19,mañana,2024-02-22,"Decreto 900 explicado",600,@historia_gt,2024-03-05,42000,,
+U10,Usuario,V12,Video,LIKED,2024-05-24 10:10:00,,,,,,,Diego,19,mañana,2024-02-22,"Decreto 900 explicado",600,@historia_gt,2024-03-05,42000,,
+U10,Usuario,V11,Video,WATCHED,2024-05-24 10:15:00,300,true,,,,Diego,19,mañana,2024-02-22,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U10,Usuario,V11,Video,SHARED,2024-05-24 10:20:00,,,,Instagram,,,Diego,19,mañana,2024-02-22,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U10,Usuario,V06,Video,WATCHED,2024-05-24 10:25:00,150,false,,,,Diego,19,mañana,2024-02-22,"Review iPhone 16",300,@tech_guru,2024-05-15,450000,,
+U06,Usuario,V06,Video,WATCHED,2024-05-25 15:30:00,300,true,,,,Roberto,21,tarde,2024-02-15,"Review iPhone 16",300,@tech_guru,2024-05-15,450000,,
+U08,Usuario,V13,Video,WATCHED,2024-05-25 21:30:00,240,true,,,,Mario,20,noche,2024-01-28,"Review teclado mecánico",240,@tech_guru,2024-05-02,150000,,
+V16,Video,T10,Tag,TAGGED_WITH,,,,,,0.95,,,,,"Tutorial maquillaje de noche",180,@makeup_pro,2024-05-01,150000,tutorial,estilo de vida
+V17,Video,T10,Tag,TAGGED_WITH,,,,,,0.85,,,,,"Cómo armar un cubo Rubik",300,@puzzle_master,2024-02-10,80000,tutorial,estilo de vida
+V18,Video,T02,Tag,TAGGED_WITH,,,,,,0.9,,,,,"Broma a mi hermano",60,@prank_bros,2024-04-15,400000,comedia,entretenimiento
+V19,Video,T01,Tag,TAGGED_WITH,,,,,,0.8,,,,,"Noticias tech de la semana",120,@tech_news,2024-05-20,60000,tecnología,educación
+V20,Video,T02,Tag,TAGGED_WITH,,,,,,1.0,,,,,"Recopilación de fails",150,@fail_army,2024-03-25,900000,comedia,entretenimiento
+U11,Usuario,T10,Tag,INTERESTED_IN,,,,,,0.9,Laura,21,tarde,2024-01-10,,,,,,tutorial,estilo de vida
+U12,Usuario,T02,Tag,INTERESTED_IN,,,,,,0.85,Pedro,25,noche,2024-02-05,,,,,,comedia,entretenimiento
+U13,Usuario,T01,Tag,INTERESTED_IN,,,,,,0.9,Andres,18,mañana,2024-03-15,,,,,,tecnología,educación
+U14,Usuario,T10,Tag,INTERESTED_IN,,,,,,0.8,Valeria,22,tarde,2024-01-20,,,,,,tutorial,estilo de vida
+U15,Usuario,T02,Tag,INTERESTED_IN,,,,,,0.75,Fernando,20,noche,2024-04-01,,,,,,comedia,entretenimiento
+U11,Usuario,V16,Video,WATCHED,2024-05-26 14:00:00,180,true,,,,Laura,21,tarde,2024-01-10,"Tutorial maquillaje de noche",180,@makeup_pro,2024-05-01,150000,,
+U11,Usuario,V16,Video,LIKED,2024-05-26 14:03:00,,,,,,,Laura,21,tarde,2024-01-10,"Tutorial maquillaje de noche",180,@makeup_pro,2024-05-01,150000,,
+U11,Usuario,V17,Video,WATCHED,2024-05-26 14:10:00,30,false,,,,Laura,21,tarde,2024-01-10,"Cómo armar un cubo Rubik",300,@puzzle_master,2024-02-10,80000,,
+U11,Usuario,V17,Video,NOT_INTERESTED,2024-05-26 14:11:00,,,,,,,Laura,21,tarde,2024-01-10,"Cómo armar un cubo Rubik",300,@puzzle_master,2024-02-10,80000,,
+U12,Usuario,V18,Video,WATCHED,2024-05-27 20:30:00,60,true,,,,Pedro,25,noche,2024-02-05,"Broma a mi hermano",60,@prank_bros,2024-04-15,400000,,
+U12,Usuario,V18,Video,SHARED,2024-05-27 20:32:00,,,,WhatsApp,,,Pedro,25,noche,2024-02-05,"Broma a mi hermano",60,@prank_bros,2024-04-15,400000,,
+U12,Usuario,V20,Video,WATCHED,2024-05-27 20:40:00,150,true,,,,Pedro,25,noche,2024-02-05,"Recopilación de fails",150,@fail_army,2024-03-25,900000,,
+U12,Usuario,V20,Video,LIKED,2024-05-27 20:43:00,,,,,,,Pedro,25,noche,2024-02-05,"Recopilación de fails",150,@fail_army,2024-03-25,900000,,
+U13,Usuario,V19,Video,WATCHED,2024-05-28 08:15:00,120,true,,,,Andres,18,mañana,2024-03-15,"Noticias tech de la semana",120,@tech_news,2024-05-20,60000,,
+U13,Usuario,V01,Video,WATCHED,2024-05-28 08:20:00,45,false,,,,Andres,18,mañana,2024-03-15,"El origen de la IA",120,@tech_guru,2024-03-01,250000,,
+U14,Usuario,V16,Video,WATCHED,2024-05-29 16:00:00,180,true,,,,Valeria,22,tarde,2024-01-20,"Tutorial maquillaje de noche",180,@makeup_pro,2024-05-01,150000,,
+U14,Usuario,V16,Video,LIKED,2024-05-29 16:03:00,,,,,,,Valeria,22,tarde,2024-01-20,"Tutorial maquillaje de noche",180,@makeup_pro,2024-05-01,150000,,
+U14,Usuario,V16,Video,SHARED,2024-05-29 16:04:00,,,,Instagram,,,Valeria,22,tarde,2024-01-20,"Tutorial maquillaje de noche",180,@makeup_pro,2024-05-01,150000,,
+U14,Usuario,V04,Video,WATCHED,2024-05-29 16:15:00,180,true,,,,Valeria,22,tarde,2024-01-20,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,,
+U15,Usuario,V17,Video,WATCHED,2024-05-30 22:00:00,300,true,,,,Fernando,20,noche,2024-04-01,"Cómo armar un cubo Rubik",300,@puzzle_master,2024-02-10,80000,,
+U15,Usuario,V17,Video,LIKED,2024-05-30 22:05:00,,,,,,,Fernando,20,noche,2024-04-01,"Cómo armar un cubo Rubik",300,@puzzle_master,2024-02-10,80000,,
+U15,Usuario,V18,Video,WATCHED,2024-05-30 22:10:00,10,false,,,,Fernando,20,noche,2024-04-01,"Broma a mi hermano",60,@prank_bros,2024-04-15,400000,,
+U15,Usuario,V18,Video,NOT_INTERESTED,2024-05-30 22:11:00,,,,,,,Fernando,20,noche,2024-04-01,"Broma a mi hermano",60,@prank_bros,2024-04-15,400000,,
+V21,Video,T11,Tag,TAGGED_WITH,,,,,,0.95,,,,,"Introducción a Julia",400,@julia_devs,2024-05-10,12000,programación,educación
+V22,Video,T11,Tag,TAGGED_WITH,,,,,,0.9,,,,,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,programación,educación
+V23,Video,T12,Tag,TAGGED_WITH,,,,,,0.85,,,,,"Física del péndulo simple",180,@physics_lab,2024-03-15,22000,física,ciencia
+V24,Video,T13,Tag,TAGGED_WITH,,,,,,0.95,,,,,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,coleccionables,hobby
+V25,Video,T14,Tag,TAGGED_WITH,,,,,,1.0,,,,,"Upscaling 4K para videos antiguos",300,@video_edit,2024-02-28,55000,edición,tecnología
+U16,Usuario,T11,Tag,INTERESTED_IN,,,,,,0.95,Hector,21,noche,2024-01-12,,,,,,programación,educación
+U17,Usuario,T12,Tag,INTERESTED_IN,,,,,,0.85,Daniela,20,mañana,2024-02-18,,,,,,física,ciencia
+U18,Usuario,T13,Tag,INTERESTED_IN,,,,,,0.9,Oscar,23,tarde,2024-03-22,,,,,,coleccionables,hobby
+U19,Usuario,T14,Tag,INTERESTED_IN,,,,,,0.8,Monica,22,noche,2024-01-30,,,,,,edición,tecnología
+U20,Usuario,T11,Tag,INTERESTED_IN,,,,,,0.75,Victor,19,mañana,2024-04-10,,,,,,programación,educación
+U16,Usuario,V21,Video,WATCHED,2024-05-31 20:00:00,400,true,,,,Hector,21,noche,2024-01-12,"Introducción a Julia",400,@julia_devs,2024-05-10,12000,,
+U16,Usuario,V21,Video,LIKED,2024-05-31 20:07:00,,,,,,,Hector,21,noche,2024-01-12,"Introducción a Julia",400,@julia_devs,2024-05-10,12000,,
+U16,Usuario,V22,Video,WATCHED,2024-05-31 20:15:00,250,true,,,,Hector,21,noche,2024-01-12,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,,
+U16,Usuario,V22,Video,SHARED,2024-05-31 20:20:00,,,,WhatsApp,,,Hector,21,noche,2024-01-12,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,,
+U17,Usuario,V23,Video,WATCHED,2024-06-01 09:30:00,180,true,,,,Daniela,20,mañana,2024-02-18,"Física del péndulo simple",180,@physics_lab,2024-03-15,22000,,
+U17,Usuario,V23,Video,LIKED,2024-06-01 09:33:00,,,,,,,Daniela,20,mañana,2024-02-18,"Física del péndulo simple",180,@physics_lab,2024-03-15,22000,,
+U17,Usuario,V24,Video,WATCHED,2024-06-01 09:40:00,15,false,,,,Daniela,20,mañana,2024-02-18,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U17,Usuario,V24,Video,NOT_INTERESTED,2024-06-01 09:41:00,,,,,,,Daniela,20,mañana,2024-02-18,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U18,Usuario,V24,Video,WATCHED,2024-06-02 16:00:00,60,true,,,,Oscar,23,tarde,2024-03-22,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U18,Usuario,V24,Video,LIKED,2024-06-02 16:01:00,,,,,,,Oscar,23,tarde,2024-03-22,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U18,Usuario,V24,Video,SHARED,2024-06-02 16:02:00,,,,Instagram,,,Oscar,23,tarde,2024-03-22,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U19,Usuario,V25,Video,WATCHED,2024-06-03 21:00:00,300,true,,,,Monica,22,noche,2024-01-30,"Upscaling 4K para videos antiguos",300,@video_edit,2024-02-28,55000,,
+U19,Usuario,V25,Video,LIKED,2024-06-03 21:05:00,,,,,,,Monica,22,noche,2024-01-30,"Upscaling 4K para videos antiguos",300,@video_edit,2024-02-28,55000,,
+U19,Usuario,V23,Video,WATCHED,2024-06-03 21:10:00,30,false,,,,Monica,22,noche,2024-01-30,"Física del péndulo simple",180,@physics_lab,2024-03-15,22000,,
+U20,Usuario,V21,Video,WATCHED,2024-06-04 10:00:00,400,true,,,,Victor,19,mañana,2024-04-10,"Introducción a Julia",400,@julia_devs,2024-05-10,12000,,
+U20,Usuario,V22,Video,WATCHED,2024-06-04 10:10:00,200,false,,,,Victor,19,mañana,2024-04-10,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,,
+U20,Usuario,V25,Video,WATCHED,2024-06-04 10:15:00,50,false,,,,Victor,19,mañana,2024-04-10,"Upscaling 4K para videos antiguos",300,@video_edit,2024-02-28,55000,,
+U20,Usuario,V25,Video,NOT_INTERESTED,2024-06-04 10:16:00,,,,,,,Victor,19,mañana,2024-04-10,"Upscaling 4K para videos antiguos",300,@video_edit,2024-02-28,55000,,
+V26,Video,T01,Tag,TAGGED_WITH,,,,,,0.95,,,,,"Optimización de consultas SQL",180,@db_admin,2024-05-10,32000,tecnología,educación
+V27,Video,T06,Tag,TAGGED_WITH,,,,,,0.9,,,,,"Resumen Segunda Guerra Mundial",300,@historia_express,2024-01-15,850000,historia,educación
+V28,Video,T08,Tag,TAGGED_WITH,,,,,,0.85,,,,,"Top 10 Openings de Anime",120,@anime_ost,2024-04-22,450000,anime,entretenimiento
+V29,Video,T10,Tag,TAGGED_WITH,,,,,,0.9,,,,,"Cómo soldar componentes electrónicos",240,@tech_diy,2024-03-08,60000,tutorial,tecnología
+V30,Video,T05,Tag,TAGGED_WITH,,,,,,0.8,,,,,"Mejores jugadas de ajedrez",150,@chess_master,2024-05-25,110000,deportes,educación
+U01,Usuario,V26,Video,WATCHED,2024-06-05 10:00:00,180,true,,,,Ana,21,mañana,2024-01-15,"Optimización de consultas SQL",180,@db_admin,2024-05-10,32000,,
+U01,Usuario,V26,Video,LIKED,2024-06-05 10:05:00,,,,,,,Ana,21,mañana,2024-01-15,"Optimización de consultas SQL",180,@db_admin,2024-05-10,32000,,
+U02,Usuario,V28,Video,WATCHED,2024-06-05 21:00:00,120,true,,,,Carlos,22,noche,2024-01-10,"Top 10 Openings de Anime",120,@anime_ost,2024-04-22,450000,,
+U02,Usuario,V28,Video,LIKED,2024-06-05 21:03:00,,,,,,,Carlos,22,noche,2024-01-10,"Top 10 Openings de Anime",120,@anime_ost,2024-04-22,450000,,
+U02,Usuario,V28,Video,SHARED,2024-06-05 21:05:00,,,,Twitter,,,Carlos,22,noche,2024-01-10,"Top 10 Openings de Anime",120,@anime_ost,2024-04-22,450000,,
+U04,Usuario,V27,Video,WATCHED,2024-06-06 09:30:00,300,true,,,,Maria,23,mañana,2024-01-20,"Resumen Segunda Guerra Mundial",300,@historia_express,2024-01-15,850000,,
+U04,Usuario,V27,Video,LIKED,2024-06-06 09:35:00,,,,,,,Maria,23,mañana,2024-01-20,"Resumen Segunda Guerra Mundial",300,@historia_express,2024-01-15,850000,,
+U07,Usuario,V27,Video,WATCHED,2024-06-06 10:00:00,300,true,,,,Elena,22,mañana,2024-03-01,"Resumen Segunda Guerra Mundial",300,@historia_express,2024-01-15,850000,,
+U08,Usuario,V30,Video,WATCHED,2024-06-06 20:15:00,150,true,,,,Mario,20,noche,2024-01-28,"Mejores jugadas de ajedrez",150,@chess_master,2024-05-25,110000,,
+U08,Usuario,V30,Video,LIKED,2024-06-06 20:20:00,,,,,,,Mario,20,noche,2024-01-28,"Mejores jugadas de ajedrez",150,@chess_master,2024-05-25,110000,,
+U10,Usuario,V27,Video,WATCHED,2024-06-07 08:45:00,100,false,,,,Diego,19,mañana,2024-02-22,"Resumen Segunda Guerra Mundial",300,@historia_express,2024-01-15,850000,,
+U13,Usuario,V26,Video,WATCHED,2024-06-07 14:00:00,180,true,,,,Andres,18,mañana,2024-03-15,"Optimización de consultas SQL",180,@db_admin,2024-05-10,32000,,
+U14,Usuario,V29,Video,WATCHED,2024-06-07 16:30:00,240,true,,,,Valeria,22,tarde,2024-01-20,"Cómo soldar componentes electrónicos",240,@tech_diy,2024-03-08,60000,,
+U14,Usuario,V29,Video,SHARED,2024-06-07 16:35:00,,,,WhatsApp,,,Valeria,22,tarde,2024-01-20,"Cómo soldar componentes electrónicos",240,@tech_diy,2024-03-08,60000,,
+U16,Usuario,V26,Video,WATCHED,2024-06-08 21:00:00,180,true,,,,Hector,21,noche,2024-01-12,"Optimización de consultas SQL",180,@db_admin,2024-05-10,32000,,
+U16,Usuario,V26,Video,LIKED,2024-06-08 21:05:00,,,,,,,Hector,21,noche,2024-01-12,"Optimización de consultas SQL",180,@db_admin,2024-05-10,32000,,
+U19,Usuario,V29,Video,WATCHED,2024-06-08 22:15:00,240,true,,,,Monica,22,noche,2024-01-30,"Cómo soldar componentes electrónicos",240,@tech_diy,2024-03-08,60000,,
+U19,Usuario,V29,Video,LIKED,2024-06-08 22:20:00,,,,,,,Monica,22,noche,2024-01-30,"Cómo soldar componentes electrónicos",240,@tech_diy,2024-03-08,60000,,
+U20,Usuario,V26,Video,WATCHED,2024-06-09 10:30:00,60,false,,,,Victor,19,mañana,2024-04-10,"Optimización de consultas SQL",180,@db_admin,2024-05-10,32000,,
+U03,Usuario,V15,Video,WATCHED,2024-06-09 15:00:00,90,true,,,,Luis,20,tarde,2024-03-05,"Tráiler nueva película",90,@cine_fan,2024-05-18,500000,,
+U05,Usuario,V28,Video,WATCHED,2024-06-09 19:30:00,120,true,,,,Jorge,19,noche,2024-04-12,"Top 10 Openings de Anime",120,@anime_ost,2024-04-22,450000,,
+U06,Usuario,V28,Video,WATCHED,2024-06-09 20:00:00,120,true,,,,Roberto,21,tarde,2024-02-15,"Top 10 Openings de Anime",120,@anime_ost,2024-04-22,450000,,
+U06,Usuario,V28,Video,LIKED,2024-06-09 20:05:00,,,,,,,Roberto,21,tarde,2024-02-15,"Top 10 Openings de Anime",120,@anime_ost,2024-04-22,450000,,
+U09,Usuario,V29,Video,WATCHED,2024-06-10 14:00:00,15,false,,,,Carmen,24,tarde,2024-04-05,"Cómo soldar componentes electrónicos",240,@tech_diy,2024-03-08,60000,,
+U09,Usuario,V29,Video,NOT_INTERESTED,2024-06-10 14:01:00,,,,,,,Carmen,24,tarde,2024-04-05,"Cómo soldar componentes electrónicos",240,@tech_diy,2024-03-08,60000,,
+U11,Usuario,V29,Video,WATCHED,2024-06-10 16:45:00,240,true,,,,Laura,21,tarde,2024-01-10,"Cómo soldar componentes electrónicos",240,@tech_diy,2024-03-08,60000,,
+U12,Usuario,V30,Video,WATCHED,2024-06-10 21:30:00,150,true,,,,Pedro,25,noche,2024-02-05,"Mejores jugadas de ajedrez",150,@chess_master,2024-05-25,110000,,
+U15,Usuario,V28,Video,WATCHED,2024-06-11 22:00:00,30,false,,,,Fernando,20,noche,2024-04-01,"Top 10 Openings de Anime",120,@anime_ost,2024-04-22,450000,,
+U17,Usuario,V30,Video,WATCHED,2024-06-11 09:15:00,150,true,,,,Daniela,20,mañana,2024-02-18,"Mejores jugadas de ajedrez",150,@chess_master,2024-05-25,110000,,
+U18,Usuario,V28,Video,WATCHED,2024-06-11 17:00:00,120,true,,,,Oscar,23,tarde,2024-03-22,"Top 10 Openings de Anime",120,@anime_ost,2024-04-22,450000,,
+U18,Usuario,V28,Video,LIKED,2024-06-11 17:05:00,,,,,,,Oscar,23,tarde,2024-03-22,"Top 10 Openings de Anime",120,@anime_ost,2024-04-22,450000,,
+U18,Usuario,V28,Video,SHARED,2024-06-11 17:10:00,,,,Instagram,,,Oscar,23,tarde,2024-03-22,"Top 10 Openings de Anime",120,@anime_ost,2024-04-22,450000,,
+U03,Usuario,V26,Video,WATCHED,2024-06-12 10:00:00,180,true,,,,Luis,20,tarde,2024-03-05,"Optimización de consultas SQL",180,@db_admin,2024-05-10,32000,,
+U03,Usuario,V26,Video,LIKED,2024-06-12 10:05:00,,,,,,,Luis,20,tarde,2024-03-05,"Optimización de consultas SQL",180,@db_admin,2024-05-10,32000,,
+U07,Usuario,V28,Video,WATCHED,2024-06-12 14:30:00,120,true,,,,Elena,22,mañana,2024-03-01,"Top 10 Openings de Anime",120,@anime_ost,2024-04-22,450000,,
+U07,Usuario,V28,Video,LIKED,2024-06-12 14:35:00,,,,,,,Elena,22,mañana,2024-03-01,"Top 10 Openings de Anime",120,@anime_ost,2024-04-22,450000,,
+U11,Usuario,V06,Video,WATCHED,2024-06-13 09:15:00,300,true,,,,Laura,21,tarde,2024-01-10,"Review iPhone 16",300,@tech_guru,2024-05-15,450000,,
+U11,Usuario,V06,Video,LIKED,2024-06-13 09:20:00,,,,,,,Laura,21,tarde,2024-01-10,"Review iPhone 16",300,@tech_guru,2024-05-15,450000,,
+U11,Usuario,V06,Video,SHARED,2024-06-13 09:25:00,,,,Instagram,,,Laura,21,tarde,2024-01-10,"Review iPhone 16",300,@tech_guru,2024-05-15,450000,,
+U15,Usuario,V08,Video,WATCHED,2024-06-13 20:00:00,60,true,,,,Fernando,20,noche,2024-04-01,"Historia de Roma en 1 min",60,@historia_express,2024-02-28,150000,,
+U15,Usuario,V08,Video,NOT_INTERESTED,2024-06-13 20:02:00,,,,,,,Fernando,20,noche,2024-04-01,"Historia de Roma en 1 min",60,@historia_express,2024-02-28,150000,,
+U18,Usuario,V01,Video,WATCHED,2024-06-14 16:00:00,120,true,,,,Oscar,23,tarde,2024-03-22,"El origen de la IA",120,@tech_guru,2024-03-01,250000,,
+U20,Usuario,V13,Video,WATCHED,2024-06-14 10:30:00,240,true,,,,Victor,19,mañana,2024-04-10,"Review teclado mecánico",240,@tech_guru,2024-05-02,150000,,
+U20,Usuario,V13,Video,LIKED,2024-06-14 10:35:00,,,,,,,Victor,19,mañana,2024-04-10,"Review teclado mecánico",240,@tech_guru,2024-05-02,150000,,
+U01,Usuario,V14,Video,WATCHED,2024-06-15 08:00:00,120,true,,,,Ana,21,mañana,2024-01-15,"Mejores jugadas NBA",120,@basket_fan,2024-04-20,210000,,
+U02,Usuario,V12,Video,WATCHED,2024-06-15 22:00:00,600,true,,,,Carlos,22,noche,2024-01-10,"Decreto 900 explicado",600,@historia_gt,2024-03-05,42000,,
+U02,Usuario,V12,Video,LIKED,2024-06-15 22:10:00,,,,,,,Carlos,22,noche,2024-01-10,"Decreto 900 explicado",600,@historia_gt,2024-03-05,42000,,
+U04,Usuario,V18,Video,WATCHED,2024-06-16 09:00:00,60,true,,,,Maria,23,mañana,2024-01-20,"Broma a mi hermano",60,@prank_bros,2024-04-15,400000,,
+U04,Usuario,V18,Video,SHARED,2024-06-16 09:05:00,,,,WhatsApp,,,Maria,23,mañana,2024-01-20,"Broma a mi hermano",60,@prank_bros,2024-04-15,400000,,
+U05,Usuario,V21,Video,WATCHED,2024-06-16 21:00:00,100,false,,,,Jorge,19,noche,2024-04-12,"Introducción a Julia",400,@julia_devs,2024-05-10,12000,,
+U05,Usuario,V21,Video,NOT_INTERESTED,2024-06-16 21:05:00,,,,,,,Jorge,19,noche,2024-04-12,"Introducción a Julia",400,@julia_devs,2024-05-10,12000,,
+U06,Usuario,V23,Video,WATCHED,2024-06-17 15:30:00,180,true,,,,Roberto,21,tarde,2024-02-15,"Física del péndulo simple",180,@physics_lab,2024-03-15,22000,,
+U08,Usuario,V19,Video,WATCHED,2024-06-17 20:00:00,120,true,,,,Mario,20,noche,2024-01-28,"Noticias tech de la semana",120,@tech_news,2024-05-20,60000,,
+U08,Usuario,V19,Video,LIKED,2024-06-17 20:05:00,,,,,,,Mario,20,noche,2024-01-28,"Noticias tech de la semana",120,@tech_news,2024-05-20,60000,,
+U09,Usuario,V20,Video,WATCHED,2024-06-18 16:45:00,150,true,,,,Carmen,24,tarde,2024-04-05,"Recopilación de fails",150,@fail_army,2024-03-25,900000,,
+U10,Usuario,V14,Video,WATCHED,2024-06-18 10:15:00,120,true,,,,Diego,19,mañana,2024-02-22,"Mejores jugadas NBA",120,@basket_fan,2024-04-20,210000,,
+U10,Usuario,V14,Video,LIKED,2024-06-18 10:20:00,,,,,,,Diego,19,mañana,2024-02-22,"Mejores jugadas NBA",120,@basket_fan,2024-04-20,210000,,
+U12,Usuario,V16,Video,WATCHED,2024-06-19 21:00:00,20,false,,,,Pedro,25,noche,2024-02-05,"Tutorial maquillaje de noche",180,@makeup_pro,2024-05-01,150000,,
+U12,Usuario,V16,Video,NOT_INTERESTED,2024-06-19 21:02:00,,,,,,,Pedro,25,noche,2024-02-05,"Tutorial maquillaje de noche",180,@makeup_pro,2024-05-01,150000,,
+U13,Usuario,V24,Video,WATCHED,2024-06-19 08:30:00,60,true,,,,Andres,18,mañana,2024-03-15,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U13,Usuario,V24,Video,SHARED,2024-06-19 08:35:00,,,,Twitter,,,Andres,18,mañana,2024-03-15,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U14,Usuario,V25,Video,WATCHED,2024-06-20 17:00:00,300,true,,,,Valeria,22,tarde,2024-01-20,"Upscaling 4K para videos antiguos",300,@video_edit,2024-02-28,55000,,
+U14,Usuario,V25,Video,LIKED,2024-06-20 17:05:00,,,,,,,Valeria,22,tarde,2024-01-20,"Upscaling 4K para videos antiguos",300,@video_edit,2024-02-28,55000,,
+U16,Usuario,V27,Video,WATCHED,2024-06-20 20:00:00,300,true,,,,Hector,21,noche,2024-01-12,"Resumen Segunda Guerra Mundial",300,@historia_express,2024-01-15,850000,,
+U17,Usuario,V02,Video,WATCHED,2024-06-21 09:00:00,45,true,,,,Daniela,20,mañana,2024-02-18,"Memes de gatos 2025",45,@cat_laughs,2024-04-10,500000,,
+U17,Usuario,V02,Video,LIKED,2024-06-21 09:05:00,,,,,,,Daniela,20,mañana,2024-02-18,"Memes de gatos 2025",45,@cat_laughs,2024-04-10,500000,,
+U19,Usuario,V05,Video,WATCHED,2024-06-21 21:30:00,90,true,,,,Monica,22,noche,2024-01-30,"Mejores goles de la Champions",90,@futbol_top,2024-05-01,800000,,
+U19,Usuario,V05,Video,SHARED,2024-06-21 21:35:00,,,,Instagram,,,Monica,22,noche,2024-01-30,"Mejores goles de la Champions",90,@futbol_top,2024-05-01,800000,,
+U02,Usuario,V04,Video,WATCHED,2024-06-22 10:00:00,180,true,,,,Carlos,22,noche,2024-01-10,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,,
+U02,Usuario,V04,Video,LIKED,2024-06-22 10:05:00,,,,,,,Carlos,22,noche,2024-01-10,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,,
+U03,Usuario,V11,Video,WATCHED,2024-06-22 11:00:00,300,true,,,,Luis,20,tarde,2024-03-05,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U03,Usuario,V11,Video,SHARED,2024-06-22 11:05:00,,,,WhatsApp,,,Luis,20,tarde,2024-03-05,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U04,Usuario,V22,Video,WATCHED,2024-06-22 12:00:00,250,true,,,,Maria,23,mañana,2024-01-20,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,,
+U04,Usuario,V22,Video,LIKED,2024-06-22 12:05:00,,,,,,,Maria,23,mañana,2024-01-20,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,,
+U05,Usuario,V24,Video,WATCHED,2024-06-22 13:00:00,60,true,,,,Jorge,19,noche,2024-04-12,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U05,Usuario,V24,Video,LIKED,2024-06-22 13:02:00,,,,,,,Jorge,19,noche,2024-04-12,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U06,Usuario,V07,Video,WATCHED,2024-06-22 14:00:00,5,false,,,,Roberto,21,tarde,2024-02-15,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U06,Usuario,V07,Video,NOT_INTERESTED,2024-06-22 14:01:00,,,,,,,Roberto,21,tarde,2024-02-15,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U07,Usuario,V09,Video,WATCHED,2024-06-23 09:00:00,400,true,,,,Elena,22,mañana,2024-03-01,"Cómo invertir en bolsa",400,@finanzas_ya,2024-01-10,200000,,
+U07,Usuario,V09,Video,SHARED,2024-06-23 09:05:00,,,,Twitter,,,Elena,22,mañana,2024-03-01,"Cómo invertir en bolsa",400,@finanzas_ya,2024-01-10,200000,,
+U08,Usuario,V12,Video,WATCHED,2024-06-23 10:00:00,600,true,,,,Mario,20,noche,2024-01-28,"Decreto 900 explicado",600,@historia_gt,2024-03-05,42000,,
+U08,Usuario,V12,Video,LIKED,2024-06-23 10:10:00,,,,,,,Mario,20,noche,2024-01-28,"Decreto 900 explicado",600,@historia_gt,2024-03-05,42000,,
+U09,Usuario,V03,Video,WATCHED,2024-06-23 11:00:00,10,false,,,,Carmen,24,tarde,2024-04-05,"Rutina de abdomen",60,@fit_life,2024-02-15,120000,,
+U09,Usuario,V03,Video,NOT_INTERESTED,2024-06-23 11:01:00,,,,,,,Carmen,24,tarde,2024-04-05,"Rutina de abdomen",60,@fit_life,2024-02-15,120000,,
+U10,Usuario,V24,Video,WATCHED,2024-06-23 12:00:00,60,true,,,,Diego,19,mañana,2024-02-22,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U10,Usuario,V24,Video,LIKED,2024-06-23 12:02:00,,,,,,,Diego,19,mañana,2024-02-22,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U11,Usuario,V22,Video,WATCHED,2024-06-24 14:00:00,250,true,,,,Laura,21,tarde,2024-01-10,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,,
+U11,Usuario,V22,Video,SHARED,2024-06-24 14:05:00,,,,Instagram,,,Laura,21,tarde,2024-01-10,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,,
+U12,Usuario,V11,Video,WATCHED,2024-06-24 15:00:00,30,false,,,,Pedro,25,noche,2024-02-05,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U12,Usuario,V11,Video,NOT_INTERESTED,2024-06-24 15:02:00,,,,,,,Pedro,25,noche,2024-02-05,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U13,Usuario,V07,Video,WATCHED,2024-06-24 16:00:00,30,true,,,,Andres,18,mañana,2024-03-15,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U13,Usuario,V07,Video,LIKED,2024-06-24 16:02:00,,,,,,,Andres,18,mañana,2024-03-15,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U14,Usuario,V03,Video,WATCHED,2024-06-25 09:00:00,60,true,,,,Valeria,22,tarde,2024-01-20,"Rutina de abdomen",60,@fit_life,2024-02-15,120000,,
+U14,Usuario,V03,Video,LIKED,2024-06-25 09:05:00,,,,,,,Valeria,22,tarde,2024-01-20,"Rutina de abdomen",60,@fit_life,2024-02-15,120000,,
+U15,Usuario,V12,Video,WATCHED,2024-06-25 10:00:00,600,true,,,,Fernando,20,noche,2024-04-01,"Decreto 900 explicado",600,@historia_gt,2024-03-05,42000,,
+U15,Usuario,V12,Video,SHARED,2024-06-25 10:15:00,,,,WhatsApp,,,Fernando,20,noche,2024-04-01,"Decreto 900 explicado",600,@historia_gt,2024-03-05,42000,,
+U16,Usuario,V04,Video,WATCHED,2024-06-25 11:00:00,180,true,,,,Hector,21,noche,2024-01-12,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,,
+U16,Usuario,V04,Video,LIKED,2024-06-25 11:05:00,,,,,,,Hector,21,noche,2024-01-12,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,,
+U17,Usuario,V09,Video,WATCHED,2024-06-26 14:00:00,400,true,,,,Daniela,20,mañana,2024-02-18,"Cómo invertir en bolsa",400,@finanzas_ya,2024-01-10,200000,,
+U17,Usuario,V09,Video,LIKED,2024-06-26 14:10:00,,,,,,,Daniela,20,mañana,2024-02-18,"Cómo invertir en bolsa",400,@finanzas_ya,2024-01-10,200000,,
+U18,Usuario,V11,Video,WATCHED,2024-06-26 15:00:00,300,true,,,,Oscar,23,tarde,2024-03-22,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U18,Usuario,V11,Video,LIKED,2024-06-26 15:05:00,,,,,,,Oscar,23,tarde,2024-03-22,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U19,Usuario,V22,Video,WATCHED,2024-06-26 16:00:00,250,true,,,,Monica,22,noche,2024-01-30,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,,
+U19,Usuario,V22,Video,LIKED,2024-06-26 16:05:00,,,,,,,Monica,22,noche,2024-01-30,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,,
+U20,Usuario,V24,Video,WATCHED,2024-06-27 09:00:00,60,true,,,,Victor,19,mañana,2024-04-10,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U20,Usuario,V24,Video,LIKED,2024-06-27 09:02:00,,,,,,,Victor,19,mañana,2024-04-10,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U01,Usuario,V22,Video,WATCHED,2024-06-27 10:00:00,250,true,,,,Ana,21,mañana,2024-01-15,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,,
+U01,Usuario,V22,Video,LIKED,2024-06-27 10:05:00,,,,,,,Ana,21,mañana,2024-01-15,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,,
+U02,Usuario,V24,Video,WATCHED,2024-06-27 11:00:00,60,true,,,,Carlos,22,noche,2024-01-10,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U02,Usuario,V24,Video,SHARED,2024-06-27 11:05:00,,,,Instagram,,,Carlos,22,noche,2024-01-10,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U03,Usuario,V07,Video,WATCHED,2024-06-28 14:00:00,30,true,,,,Luis,20,tarde,2024-03-05,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U03,Usuario,V07,Video,LIKED,2024-06-28 14:02:00,,,,,,,Luis,20,tarde,2024-03-05,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U04,Usuario,V11,Video,WATCHED,2024-06-28 15:00:00,300,true,,,,Maria,23,mañana,2024-01-20,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U04,Usuario,V11,Video,LIKED,2024-06-28 15:05:00,,,,,,,Maria,23,mañana,2024-01-20,"Pthreads en C++",300,@code_master,2024-04-10,35000,,
+U05,Usuario,V09,Video,WATCHED,2024-06-28 16:00:00,50,false,,,,Jorge,19,noche,2024-04-12,"Cómo invertir en bolsa",400,@finanzas_ya,2024-01-10,200000,,
+U05,Usuario,V09,Video,NOT_INTERESTED,2024-06-28 16:02:00,,,,,,,Jorge,19,noche,2024-04-12,"Cómo invertir en bolsa",400,@finanzas_ya,2024-01-10,200000,,
+U06,Usuario,V04,Video,WATCHED,2024-06-29 09:00:00,180,true,,,,Roberto,21,tarde,2024-02-15,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,,
+U06,Usuario,V04,Video,SHARED,2024-06-29 09:05:00,,,,WhatsApp,,,Roberto,21,tarde,2024-02-15,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,,
+U07,Usuario,V03,Video,WATCHED,2024-06-29 10:00:00,60,true,,,,Elena,22,mañana,2024-03-01,"Rutina de abdomen",60,@fit_life,2024-02-15,120000,,
+U07,Usuario,V03,Video,LIKED,2024-06-29 10:05:00,,,,,,,Elena,22,mañana,2024-03-01,"Rutina de abdomen",60,@fit_life,2024-02-15,120000,,
+U08,Usuario,V22,Video,WATCHED,2024-06-29 11:00:00,250,true,,,,Mario,20,noche,2024-01-28,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,,
+U08,Usuario,V22,Video,LIKED,2024-06-29 11:05:00,,,,,,,Mario,20,noche,2024-01-28,"Algoritmo de música con árboles 2-3",250,@data_music,2024-04-20,8500,,
+U09,Usuario,V24,Video,WATCHED,2024-06-30 14:00:00,10,false,,,,Carmen,24,tarde,2024-04-05,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U09,Usuario,V24,Video,NOT_INTERESTED,2024-06-30 14:01:00,,,,,,,Carmen,24,tarde,2024-04-05,"Mostrando mis pines de Kirby",60,@pin_collector,2024-05-05,40000,,
+U10,Usuario,V07,Video,WATCHED,2024-06-30 15:00:00,30,true,,,,Diego,19,mañana,2024-02-22,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U10,Usuario,V07,Video,LIKED,2024-06-30 15:02:00,,,,,,,Diego,19,mañana,2024-02-22,"Caídas graciosas",30,@humor_diario,2024-03-12,600000,,
+U11,Usuario,V09,Video,WATCHED,2024-06-30 16:00:00,400,true,,,,Laura,21,tarde,2024-01-10,"Cómo invertir en bolsa",400,@finanzas_ya,2024-01-10,200000,,
+U11,Usuario,V09,Video,LIKED,2024-06-30 16:10:00,,,,,,,Laura,21,tarde,2024-01-10,"Cómo invertir en bolsa",400,@finanzas_ya,2024-01-10,200000,,
+U12,Usuario,V12,Video,WATCHED,2024-07-01 09:00:00,600,true,,,,Pedro,25,noche,2024-02-05,"Decreto 900 explicado",600,@historia_gt,2024-03-05,42000,,
+U12,Usuario,V12,Video,LIKED,2024-07-01 09:15:00,,,,,,,Pedro,25,noche,2024-02-05,"Decreto 900 explicado",600,@historia_gt,2024-03-05,42000,,
+U13,Usuario,V04,Video,WATCHED,2024-07-01 10:00:00,180,true,,,,Andres,18,mañana,2024-03-15,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,,
+U13,Usuario,V04,Video,LIKED,2024-07-01 10:05:00,,,,,,,Andres,18,mañana,2024-03-15,"Receta de pizza casera",180,@chef_rapido,2024-01-20,300000,,
+V31,Video,T11,Tag,TAGGED_WITH,,,,,,0.95,,,,,"Tutorial de Python en 10 min",600,@code_master,2024-06-01,150000,programación,educación
+V32,Video,T12,Tag,TAGGED_WITH,,,,,,0.90,,,,,"Leyes de Newton con ejemplos",300,@physics_lab,2024-06-05,80000,física,ciencia
+V33,Video,T13,Tag,TAGGED_WITH,,,,,,0.85,,,,,"Mi colección de figuras retro",450,@retro_toys,2024-06-10,50000,coleccionables,hobby
+V34,Video,T14,Tag,TAGGED_WITH,,,,,,0.95,,,,,"Transiciones pro en Premiere",240,@video_edit,2024-06-15,120000,edición,tecnología
+V35,Video,T11,Tag,TAGGED_WITH,,,,,,0.85,,,,,"Patrones de diseño en Java",480,@java_dev,2024-06-20,95000,programación,educación
+V36,Video,T11,Tag,TAGGED_WITH,,,,,,0.90,,,,,"Aprende React en 20 min",1200,@code_guru,2024-06-25,90000,programación,educación
+V37,Video,T12,Tag,TAGGED_WITH,,,,,,0.95,,,,,"Mecánica Cuántica para principiantes",600,@physics_lab,2024-06-26,45000,física,ciencia
+V38,Video,T04,Tag,TAGGED_WITH,,,,,,0.85,,,,,"Tacos al pastor caseros",300,@chef_rapido,2024-06-27,150000,cocina,estilo de vida
+V39,Video,T02,Tag,TAGGED_WITH,,,,,,0.90,,,,,"Stand up comedy 2026",900,@risas_max,2024-06-28,300000,comedia,entretenimiento
+V40,Video,T01,Tag,TAGGED_WITH,,,,,,0.95,,,,,"Proyectos con STM32 y UART",450,@tech_diy,2024-06-29,50000,tecnología,educación
+U21,Usuario,T11,Tag,INTERESTED_IN,,,,,,0.9,Sofia,20,tarde,2024-05-01,,,,,,programación,educación
+U21,Usuario,T01,Tag,INTERESTED_IN,,,,,,0.85,Sofia,20,tarde,2024-05-01,,,,,,tecnología,educación
+U22,Usuario,T12,Tag,INTERESTED_IN,,,,,,0.95,Mateo,22,noche,2024-05-02,,,,,,física,ciencia
+U22,Usuario,T02,Tag,INTERESTED_IN,,,,,,0.8,Mateo,22,noche,2024-05-02,,,,,,comedia,entretenimiento
+U21,Usuario,V36,Video,WATCHED,2024-07-02 15:00:00,1200,true,,,,Sofia,20,tarde,2024-05-01,"Aprende React en 20 min",1200,@code_guru,2024-06-25,90000,,
+U21,Usuario,V36,Video,LIKED,2024-07-02 15:20:00,,,,,,,Sofia,20,tarde,2024-05-01,"Aprende React en 20 min",1200,@code_guru,2024-06-25,90000,,
+U21,Usuario,V40,Video,WATCHED,2024-07-02 16:00:00,450,true,,,,Sofia,20,tarde,2024-05-01,"Proyectos con STM32 y UART",450,@tech_diy,2024-06-29,50000,,
+U22,Usuario,V37,Video,WATCHED,2024-07-03 20:00:00,600,true,,,,Mateo,22,noche,2024-05-02,"Mecánica Cuántica para principiantes",600,@physics_lab,2024-06-26,45000,,
+U22,Usuario,V39,Video,WATCHED,2024-07-03 21:00:00,100,false,,,,Mateo,22,noche,2024-05-02,"Stand up comedy 2026",900,@risas_max,2024-06-28,300000,,
+U16,Usuario,V40,Video,WATCHED,2024-07-04 10:00:00,450,true,,,,Hector,21,noche,2024-01-12,"Proyectos con STM32 y UART",450,@tech_diy,2024-06-29,50000,,
+V41,Video,T11,Tag,TAGGED_WITH,,,,,,0.95,,,,,"Desarrollo de un juego de plataformas en Java",1800,@java_dev,2024-07-01,15000,programación,educación
+V42,Video,T12,Tag,TAGGED_WITH,,,,,,0.90,,,,,"Problemas de cinemática: numéricos y directos",420,@physics_lab,2024-07-02,22000,física,ciencia
+V43,Video,T01,Tag,TAGGED_WITH,,,,,,0.85,,,,,"Comunicación Serial UART desde cero",600,@tech_diy,2024-07-03,18000,tecnología,educación
+V44,Video,T10,Tag,TAGGED_WITH,,,,,,0.95,,,,,"Técnicas de integración en 5 minutos",300,@math_hacks,2024-07-04,45000,tutorial,estilo de vida
+V45,Video,T04,Tag,TAGGED_WITH,,,,,,0.90,,,,,"Receta fácil: Pan de banano",360,@chef_rapido,2024-07-05,120000,cocina,estilo de vida
+V46,Video,T08,Tag,TAGGED_WITH,,,,,,0.85,,,,,"Análisis visual: la moda en el cine",480,@cine_fan,2024-07-06,85000,cine,entretenimiento
+V47,Video,T02,Tag,TAGGED_WITH,,,,,,0.90,,,,,"Cuando el código compila a la primera",60,@tech_laughs,2024-07-07,350000,comedia,entretenimiento
+V48,Video,T05,Tag,TAGGED_WITH,,,,,,0.85,,,,,"Resumen del partido de ayer",120,@futbol_top,2024-07-08,210000,deportes,entretenimiento
+V49,Video,T06,Tag,TAGGED_WITH,,,,,,0.95,,,,,"Gestión de residuos en la historia",540,@eco_history,2024-07-09,15000,historia,educación
+V50,Video,T14,Tag,TAGGED_WITH,,,,,,0.90,,,,,"Corrección de color básica",400,@video_edit,2024-07-10,95000,edición,tecnología
+U16,Usuario,V41,Video,WATCHED,2024-07-11 10:00:00,1800,true,,,,Hector,21,noche,2024-01-12,"Desarrollo de un juego de plataformas en Java",1800,@java_dev,2024-07-01,15000,,
+U16,Usuario,V41,Video,LIKED,2024-07-11 10:05:00,,,,,,,Hector,21,noche,2024-01-12,"Desarrollo de un juego de plataformas en Java",1800,@java_dev,2024-07-01,15000,,
+U17,Usuario,V42,Video,WATCHED,2024-07-11 11:00:00,420,true,,,,Daniela,20,mañana,2024-02-18,"Problemas de cinemática: numéricos y directos",420,@physics_lab,2024-07-02,22000,,
+U13,Usuario,V43,Video,WATCHED,2024-07-11 12:00:00,600,true,,,,Andres,18,mañana,2024-03-15,"Comunicación Serial UART desde cero",600,@tech_diy,2024-07-03,18000,,
+U14,Usuario,V44,Video,WATCHED,2024-07-11 13:00:00,300,true,,,,Valeria,22,tarde,2024-01-20,"Técnicas de integración en 5 minutos",300,@math_hacks,2024-07-04,45000,,
+U03,Usuario,V45,Video,WATCHED,2024-07-11 14:00:00,360,true,,,,Luis,20,tarde,2024-03-05,"Receta fácil: Pan de banano",360,@chef_rapido,2024-07-05,120000,,
+U05,Usuario,V46,Video,WATCHED,2024-07-11 15:00:00,480,true,,,,Jorge,19,noche,2024-04-12,"Análisis visual: la moda en el cine",480,@cine_fan,2024-07-06,85000,,
+U12,Usuario,V47,Video,WATCHED,2024-07-11 16:00:00,60,true,,,,Pedro,25,noche,2024-02-05,"Cuando el código compila a la primera",60,@tech_laughs,2024-07-07,350000,,
