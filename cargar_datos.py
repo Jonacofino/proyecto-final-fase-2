@@ -95,3 +95,68 @@ def cargar_datos(ruta_csv: str):
                 SET t.nombre=$nombre, t.categoria=$categoria
             """, **t)
         print(f"  {len(tags)} tags creados.")
+
+        # Relaciones
+        for fila in relaciones:
+            rel = fila["relacion"]
+
+            if rel == "WATCHED":
+                s.run("""
+                    MATCH (u:Usuario {id:$uid}), (v:Video {id:$vid})
+                    MERGE (u)-[r:WATCHED {timestamp:$ts}]->(v)
+                    SET r.duracion_vista_seg = $dur,
+                        r.completo = ($completo = 'true')
+                """, uid=fila["origen_id"], vid=fila["destino_id"],
+                     ts=fila["r_timestamp"], dur=int(fila["r_duracion_seg"]) if fila["r_duracion_seg"] else 0,
+                     completo=fila["r_completo"])
+
+            elif rel == "LIKED":
+                s.run("""
+                    MATCH (u:Usuario {id:$uid}), (v:Video {id:$vid})
+                    MERGE (u)-[r:LIKED]->(v)
+                    SET r.timestamp=$ts
+                """, uid=fila["origen_id"], vid=fila["destino_id"], ts=fila["r_timestamp"])
+
+            elif rel == "SHARED":
+                s.run("""
+                    MATCH (u:Usuario {id:$uid}), (v:Video {id:$vid})
+                    MERGE (u)-[r:SHARED]->(v)
+                    SET r.timestamp=$ts, r.plataforma=$plat
+                """, uid=fila["origen_id"], vid=fila["destino_id"],
+                     ts=fila["r_timestamp"], plat=fila["r_plataforma"])
+
+            elif rel == "NOT_INTERESTED":
+                s.run("""
+                    MATCH (u:Usuario {id:$uid}), (v:Video {id:$vid})
+                    MERGE (u)-[r:NOT_INTERESTED]->(v)
+                    SET r.timestamp=$ts
+                """, uid=fila["origen_id"], vid=fila["destino_id"], ts=fila["r_timestamp"])
+
+            elif rel == "TAGGED_WITH":
+                s.run("""
+                    MATCH (v:Video {id:$vid}), (t:Tag {id:$tid})
+                    MERGE (v)-[r:TAGGED_WITH]->(t)
+                    SET r.relevancia = toFloat($rel)
+                """, vid=fila["origen_id"], tid=fila["destino_id"],
+                     rel=fila["r_relevancia"] if fila["r_relevancia"] else "0.5")
+
+            elif rel == "INTERESTED_IN":
+                s.run("""
+                    MATCH (u:Usuario {id:$uid}), (t:Tag {id:$tid})
+                    MERGE (u)-[r:INTERESTED_IN]->(t)
+                    SET r.score = toFloat($score),
+                        r.ultima_actualizacion = $ts
+                """, uid=fila["origen_id"], tid=fila["destino_id"],
+                     score=fila["r_score"] if fila["r_score"] else "0.5",
+                     ts=fila["r_timestamp"])
+
+        print(f"  {len(relaciones)} relaciones creadas.")
+
+    driver.close()
+    print("\n✅ Base de datos cargada exitosamente.")
+
+
+if __name__ == "__main__":
+    import sys
+    ruta = sys.argv[1] if len(sys.argv) > 1 else "base_de_datos_supuestamente_funcional.txt"
+    cargar_datos(ruta)
