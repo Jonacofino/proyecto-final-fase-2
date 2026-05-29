@@ -66,3 +66,74 @@ class SistemaRecomendaciones:
             """, uid=user_id, limite=limite)
 
             return [dict(r) for r in resultado]
+    # ----------------------------------------------------------
+    #  AGREGAR nodos y relaciones
+    # ----------------------------------------------------------
+    def agregar_usuario(self, uid, nombre, edad, franja, registro):
+        with self.driver.session() as s:
+            s.run("""
+                MERGE (u:Usuario {id: $uid})
+                SET u.nombre=$nombre, u.edad=$edad,
+                    u.franja=$franja, u.fecha_registro=$registro
+            """, uid=uid, nombre=nombre, edad=edad, franja=franja, registro=registro)
+        print(f"Usuario {nombre} ({uid}) agregado.")
+
+    def agregar_video(self, vid, titulo, duracion, autor, pub, vistas):
+        with self.driver.session() as s:
+            s.run("""
+                MERGE (v:Video {id: $vid})
+                SET v.titulo=$titulo, v.duracion_seg=$duracion,
+                    v.autor=$autor, v.fecha_publicacion=$pub,
+                    v.vistas=$vistas
+            """, vid=vid, titulo=titulo, duracion=duracion,
+                 autor=autor, pub=pub, vistas=vistas)
+        print(f"Video '{titulo}' ({vid}) agregado.")
+
+    def agregar_tag(self, tid, nombre, categoria):
+        with self.driver.session() as s:
+            s.run("""
+                MERGE (t:Tag {id: $tid})
+                SET t.nombre=$nombre, t.categoria=$categoria
+            """, tid=tid, nombre=nombre, categoria=categoria)
+        print(f"Tag '{nombre}' ({tid}) agregado.")
+
+    def registrar_vista(self, uid, vid, duracion_vista, timestamp, completo):
+        with self.driver.session() as s:
+            s.run("""
+                MATCH (u:Usuario {id:$uid}), (v:Video {id:$vid})
+                MERGE (u)-[r:WATCHED {timestamp:$ts}]->(v)
+                SET r.duracion_vista_seg=$dur, r.completo=$completo
+            """, uid=uid, vid=vid, ts=timestamp, dur=duracion_vista, completo=completo)
+        print(f"Vista registrada: {uid} -> {vid}")
+
+    def registrar_like(self, uid, vid, timestamp):
+        with self.driver.session() as s:
+            s.run("""
+                MATCH (u:Usuario {id:$uid}), (v:Video {id:$vid})
+                MERGE (u)-[r:LIKED]->(v)
+                SET r.timestamp=$ts
+            """, uid=uid, vid=vid, ts=timestamp)
+        print(f"Like registrado: {uid} -> {vid}")
+
+    def marcar_no_interesado(self, uid, vid, timestamp):
+        with self.driver.session() as s:
+            s.run("""
+                MATCH (u:Usuario {id:$uid}), (v:Video {id:$vid})
+                MERGE (u)-[r:NOT_INTERESTED]->(v)
+                SET r.timestamp=$ts
+            """, uid=uid, vid=vid, ts=timestamp)
+        print(f"'No interesado' registrado: {uid} -> {vid}")
+
+    # ----------------------------------------------------------
+    #  ELIMINAR nodos
+    # ----------------------------------------------------------
+    def eliminar_usuario(self, uid):
+        with self.driver.session() as s:
+            s.run("MATCH (u:Usuario {id:$uid}) DETACH DELETE u", uid=uid)
+        print(f"Usuario {uid} eliminado.")
+
+    def eliminar_video(self, vid):
+        with self.driver.session() as s:
+            s.run("MATCH (v:Video {id:$vid}) DETACH DELETE v", vid=vid)
+        print(f"Video {vid} eliminado.")
+
