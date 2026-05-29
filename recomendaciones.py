@@ -137,3 +137,31 @@ class SistemaRecomendaciones:
             s.run("MATCH (v:Video {id:$vid}) DETACH DELETE v", vid=vid)
         print(f"Video {vid} eliminado.")
 
+    # ----------------------------------------------------------
+    #  CONSULTAS de informacion
+    # ----------------------------------------------------------
+    def listar_usuarios(self):
+        with self.driver.session() as s:
+            r = s.run("MATCH (u:Usuario) RETURN u.id AS id, u.nombre AS nombre, u.edad AS edad, u.franja AS franja ORDER BY u.id")
+            return [dict(x) for x in r]
+
+    def listar_videos(self):
+        with self.driver.session() as s:
+            r = s.run("MATCH (v:Video) RETURN v.id AS id, v.titulo AS titulo, v.autor AS autor, v.duracion_seg AS duracion ORDER BY v.id")
+            return [dict(x) for x in r]
+
+    def perfil_usuario(self, uid):
+        with self.driver.session() as s:
+            tags = s.run("""
+                MATCH (u:Usuario {id:$uid})-[r:INTERESTED_IN]->(t:Tag)
+                RETURN t.nombre AS tag, r.score AS score ORDER BY score DESC
+            """, uid=uid)
+            vistos = s.run("""
+                MATCH (u:Usuario {id:$uid})-[:WATCHED]->(v:Video)
+                RETURN v.titulo AS titulo, v.id AS id
+            """, uid=uid)
+            return {
+                "tags": [dict(t) for t in tags],
+                "vistos": [dict(v) for v in vistos]
+            }
+        
