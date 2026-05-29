@@ -62,3 +62,36 @@ def cargar_datos(ruta_csv: str):
                 }
 
             relaciones.append(fila)
+
+    # ── Escribir en Neo4j ─────────────────────────────────────
+    with driver.session() as s:
+        # Limpiar base de datos antes de cargar
+        s.run("MATCH (n) DETACH DELETE n")
+        print("Base de datos limpia.")
+
+        # Nodos Usuario
+        for u in usuarios.values():
+            s.run("""
+                MERGE (u:Usuario {id: $id})
+                SET u.nombre=$nombre, u.edad=$edad,
+                    u.franja=$franja, u.fecha_registro=$registro
+            """, **u)
+        print(f"  {len(usuarios)} usuarios creados.")
+
+        # Nodos Video
+        for v in videos.values():
+            s.run("""
+                MERGE (v:Video {id: $id})
+                SET v.titulo=$titulo, v.duracion_seg=$duracion,
+                    v.autor=$autor, v.fecha_publicacion=$pub,
+                    v.vistas=$vistas
+            """, **v)
+        print(f"  {len(videos)} videos creados.")
+
+        # Nodos Tag
+        for t in tags.values():
+            s.run("""
+                MERGE (t:Tag {id: $id})
+                SET t.nombre=$nombre, t.categoria=$categoria
+            """, **t)
+        print(f"  {len(tags)} tags creados.")
