@@ -8,8 +8,8 @@ Integrantes: Jonathan Cofiño (251252) · José Matías (251170) · Dostyn Lópe
 ## ¿Qué hace este sistema?
 
 Recomienda videos a usuarios basándose en un **algoritmo híbrido** que combina:
-- **Filtrado colaborativo (60%):** usuarios con gustos similares → sus videos no vistos son candidatos
-- **Filtrado por contenido (40%):** tags del video coinciden con los intereses del usuario
+- **Filtrado colaborativo (70%):** usuarios con gustos similares → sus videos no vistos son candidatos
+- **Filtrado por contenido (30%):** tags del video coinciden con los intereses del usuario
 
 El sistema está implementado en **Python** con **Neo4j** como base de datos de grafos.
 
